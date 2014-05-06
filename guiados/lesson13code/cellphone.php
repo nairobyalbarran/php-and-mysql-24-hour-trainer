@@ -95,4 +95,10 @@ class Cellphone
     return $result;  
   }
   
+  public function __construct($phoneNumber, $model, $color) {
+      $this->phoneNumber=$phoneNumber;
+      $this->model=$model;
+      $this->color=$color;
+  }
+  
 }
