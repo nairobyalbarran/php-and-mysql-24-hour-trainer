@@ -1,0 +1,19 @@
+CREATE TABLE `smithside`.`categories`(
+`cat_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+`cat_name`VARCHAR(50) NOT NULL, 
+`cat_description` TEXT NULL, 
+`cat_image` VARCHAR (255) NULL
+)ENGINE=MYISAM;
+
+CREATE TABLE `lots`(
+`lot_id`INT(11) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`lot_name` VARCHAR(50) NOT NULL,
+`lot_description` TEXT NULL,
+`lot_image` VARCHAR(255) NULL,
+`lot_number` INT (11) UNSIGNED NULL,
+`lot_price` DECIMAl(10,2) DEFAULT '0' NULL,
+`cad_id` INT(11) UNSIGNED NULL
+) ENGINE=MyISAM 
+
+
+
